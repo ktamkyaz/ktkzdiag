@@ -1,2 +1,2 @@
 tsc
-uglify ./out/ktkzdiag.js > ./out/ktkzdiag.min.js
+uglifyjs ./out/ktkzdiag.js > ./out/ktkzdiag.min.js
