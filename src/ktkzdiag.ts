@@ -1,4 +1,4 @@
-let kStyle = `
+let diagStyles = `
 <style>
 .ktkzDiag{
     position: fixed;
@@ -49,7 +49,7 @@ let kStyle = `
 </style>
 `;
 window.addEventListener("load", () => {
-  document.body.insertAdjacentHTML("beforeend", kStyle);
+  document.body.insertAdjacentHTML("beforeend", diagStyles);
 });
 function closektkzdiag(id) {
   document.querySelector("#_ktkzdiag_" + id).classList.remove("show");
