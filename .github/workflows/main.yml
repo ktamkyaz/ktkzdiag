@@ -21,7 +21,7 @@ jobs:
       - name: Build TypeScript
         run: tsc
       - name: Minify JS
-        run: uglifyjs .\out\ktkzdiag.js > .\out\ktkzdiag.min.js
+        run: uglifyjs ./out/ktkzdiag.js > ./out/ktkzdiag.min.js
       - name: GitHub Push
         uses: s0/git-publish-subdir-action@develop
         env:
