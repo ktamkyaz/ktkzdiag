@@ -17,9 +17,9 @@ jobs:
         with:
           node-version: 16
       - name: install modules
-        run: npm i -g uglify-js
+        run: npm i -g uglify-js typescript
       - name: Build TypeScript
-        run: npx tsc
+        run: tsc
       - name: Minify JS
         run: uglifyjs .\out\ktkzdiag.js > .\out\ktkzdiag.min.js
       - name: GitHub Push
